@@ -13,9 +13,12 @@ function App() {
         <div className="text-center md:text-left">
           <Dropdown />
         </div>
-        <Login/>
+      </div>
+      <div>
+          <Login/>
       </div>
     </section>
+
   );
 }
 
