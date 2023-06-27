@@ -61,3 +61,4 @@ const studHome = () => {
     );
   };
   
+  export default studHome;
