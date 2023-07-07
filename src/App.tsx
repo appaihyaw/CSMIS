@@ -20,6 +20,7 @@ import StaffHome from "./pages/StaffHomePage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
+      <Route path="/" element={<GenHome />} />
       <Route path="GenHome" element={<GenHome />} />
       <Route path="Log" element={<Log />} />
       <Route path="StaffHomePage" element={<StaffHome />} />
