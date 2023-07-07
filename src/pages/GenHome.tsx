@@ -6,7 +6,7 @@ export default function GenHome() {
   return (
     <div>
       <header>
-         <div className=" flex justify-center pl-5 pt-4 text-2xl font-medium text-blue-500">
+         <div className=" flex justify-center pl-5 pt-4 text-2xl font-medium text-blue-500 space-x-2">
             <h3>csMIS</h3>
             <img src=" https://www.ug.edu.gh/sites/default/files/ug_standard_new_sl_1.png" width="60" height="80" alt="uglogo"/>
           </div>
