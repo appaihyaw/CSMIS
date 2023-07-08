@@ -5,7 +5,7 @@ import Log from "./Log";
 export default function GenHome() {
   return (
     <div>
-      <div className="">
+      <div className="">                                                                                                
         <main>
           <Outlet />
           <div className=" flex bg-indigo-800 text-white pl-20">
