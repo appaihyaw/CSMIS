@@ -16,14 +16,14 @@ import Log from "./pages/Log";
 import StudHome from "./pages/StudHomePage";
 import RootLayout from "./Layouts/RootLayout";
 import StaffHome from "./pages/StaffHomePage";
+import Students from "./pages/StudentsPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<GenHome />} />
-      <Route path="GenHome" element={<GenHome />} />
+    <Route>
+      <Route index element={<GenHome />} />
       <Route path="Log" element={<Log />} />
-      <Route path="StaffHomePage" element={<StaffHome />} />
+      <Route path="StaffHomePage" element={<StaffHome />}></Route>
     </Route>
   )
 );
