@@ -9,17 +9,18 @@ import { ImStatsDots } from "react-icons/im";
 import { IoMdSettings } from "react-icons/io";
 import { GrResources } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
-import StudSideNav from "../components/StudSideBar";
+import SideNav from "../../components/StaffNavbarSide";
 
-const StudHome = () => {
+const StaffHome = () => {
   // Function body
 
   return (
     // JSX/tsx code
+
     <div>
-      <StudSideNav />
+      <SideNav />
     </div>
   );
 };
 
-export default StudHome;
+export default StaffHome;

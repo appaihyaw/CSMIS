@@ -1,7 +1,7 @@
 import React from "react";
-import SideNav from "../components/StaffNavbarSide";
+import SideNav from "../../components/StaffNavbarSide";
 
-const SettingsPage = () => {
+const StudentsPage = () => {
   // Function body
 
   return (
@@ -13,4 +13,4 @@ const SettingsPage = () => {
   );
 };
 
-export default SettingsPage;
+export default StudentsPage;

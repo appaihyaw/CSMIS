@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Log from "./Log";
-import StaffHome from "./StaffHomePage";
+import StaffHome from "./staff Pages/StaffHomePage";
 
 export default function GenHome() {
   return (
@@ -13,7 +13,8 @@ export default function GenHome() {
             <div className=" order-2 space-x-4 ">
               <NavLink to="/">Home</NavLink>
               <NavLink to="Log">Login</NavLink>
-              <NavLink to="StaffHomePage">Staff Home</NavLink>
+              <NavLink to="StaffHomePage">Staff Homepage</NavLink>
+              <NavLink to="StudHomePage">Student Homepage</NavLink>
             </div>
           </div>
         </nav>
