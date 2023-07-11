@@ -65,7 +65,7 @@ const StaffHome = () => {
               </h2>
             </Link> 
           ))}
-          ))
+          
         </div>
       </div>
     </section>
