@@ -60,7 +60,7 @@ export default function GenHome() {
             </div>
           </div>
           <div className=" flex justify-cente ">
-            <img src=" ug main2.jpeg" alt="" width={2000} height="100" />
+            <img src=" ug main2.jpeg" alt="" width={2000} height={100} />
           </div>
         </main>
       </div>
