@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
-import { AiOutlineHome, AiOutlineCloseCircle } from "react-icons/ai";
+import {
+  AiOutlineHome,
+  AiOutlineCloseCircle,
+  AiOutlineSearch,
+} from "react-icons/ai";
 import { PiStudentFill } from "react-icons/pi";
 import { SiGoogleclassroom } from "react-icons/si";
 import { LiaUserEditSolid } from "react-icons/lia";
@@ -10,6 +14,7 @@ import { IoMdSettings } from "react-icons/io";
 import { GrResources } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
 import { TbMenu2 } from "react-icons/tb";
+import { MdOutlineLightMode, MdLightMode } from "react-icons/md";
 
 const SideNav = () => {
   // Function body
@@ -42,6 +47,77 @@ const SideNav = () => {
   return (
     // JSX/tsx code
     <>
+      <div className="max-w-[1640] mx-auto flex justify-between items-center p-4">
+        <div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="fixed flex items-center cursor-pointer left-10 top-5 "
+          >
+            {React.createElement(TbMenu2, { size: "18" })}
+          </button>
+          <div className="bg-gray-200 rounded-full ml-20 flex items-center px-2 w-[200px] sm:w-[400px] lg:w[500px]">
+            <AiOutlineSearch size={20} />
+            <input
+              className="bg-transparent p-2 focus:outline-none w-full"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+        <div className="flex items-center mr-80 bg-gray-200 rounded-full ">
+          <MdLightMode className="bg-white" size={18} />
+          <MdOutlineLightMode size={18} />
+        </div>
+        {/* overlay*/}
+        {isOpen ? (
+          <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        ) : (
+          ""
+        )}
+
+        <div
+          className={
+            isOpen
+              ? "bg-[#18345C] fixed top-0 z-10 left-0 min-h-screen w-72 text-gray-100 p-5  ease-in-out duration-300 "
+              : "bg-[#18345C] fixed top-0 z-10 min-h-screen w-72 text-gray-100 p-5  left-[-100%] ease-in-out duration-300 "
+          }
+        >
+          <div className={" "}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="fill-black cursor-pointer text-gray-400  fixed ml-60"
+            >
+              {React.createElement(AiOutlineCloseCircle, { size: "18" })}
+            </button>
+            <div className="mr-20 flex">
+              <img src="Group 7010.png" alt="Group 7010" />
+              <span className="font-bold mr-4 px-6">csMIS</span>
+            </div>
+            <nav className=" mt-4 flex flex-col gap-4 relative">
+              {menus?.map((menu, i) => (
+                <Link
+                  to={menu?.link}
+                  key={i}
+                  className=" ${menu?.margin && 'mt-3' } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-slate-300 hover:text-black rounded-md"
+                >
+                  <div className="text-black  ">
+                    {" "}
+                    {React.createElement(menu?.icon, { size: "20" })}
+                  </div>
+                  <h2
+                    className={
+                      "whitespace-pre duration-500 font-normal hover:font-bold w-full h-full"
+                    }
+                  >
+                    {menu?.name}
+                  </h2>
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </div>
+      {/*
       {!isOpen ? (
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -50,41 +126,43 @@ const SideNav = () => {
           {React.createElement(TbMenu2, { size: "18" })}
         </button>
       ) : (
-        <div>
-          <div
-            className={
-              "bg-[#18345C] min-h-screen w-72 text-gray-100 p-5 ${isOpen ? 'translate-x-full':'translate-x-0'} ease-in-out duration-300"
-            }
-          >
+        <nav className="${isOpen ? 'translate-x-full':'translate-x-0'} ease-in-out duration-300">
+          <div className={"bg-[#18345C] min-h-screen w-72 text-gray-100 p-5 "}>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="fill-black cursor-pointer text-gray-400  fixed ml-60"
             >
               {React.createElement(AiOutlineCloseCircle, { size: "18" })}
             </button>
-            <div className="mr-20">
+            <div className="mr-20 flex">
               <img src="Group 7010.png" alt="Group 7010" />
+              <span className="font-bold mr-4 px-6">csMIS</span>
             </div>
             <div className=" mt-4 flex flex-col gap-4 relative">
               {menus?.map((menu, i) => (
                 <Link
                   to={menu?.link}
                   key={i}
-                  className=" ${menu?.margin && 'mt-3' } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-slate-300 rounded-md"
+                  className=" ${menu?.margin && 'mt-3' } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-slate-300 hover:text-black rounded-md"
                 >
-                  <div className="text-black">
+                  <div className="text-black  ">
                     {" "}
                     {React.createElement(menu?.icon, { size: "20" })}
                   </div>
-                  <h2 className={"whitespace-pre duration-500 "}>
+                  <h2
+                    className={
+                      "whitespace-pre duration-500 font-normal hover:font-bold w-full h-full"
+                    }
+                  >
                     {menu?.name}
                   </h2>
                 </Link>
               ))}
             </div>
           </div>
-        </div>
-      )}
+        </nav>
+                  
+      )}*/}
     </>
   );
 };
