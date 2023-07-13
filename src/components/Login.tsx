@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Mock function to send authentication code to the provided email
 function sendAuthenticationCode(email: string): void {
@@ -9,15 +9,18 @@ function sendAuthenticationCode(email: string): void {
 // Mock function to reset the password
 function resetPassword(email: string, newPassword: string): void {
   // Simulating password reset process, replace with actual implementation
-  console.log(`Password reset successful for ${email}. New password: ${newPassword}`);
+  console.log(
+    `Password reset successful for ${email}. New password: ${newPassword}`
+  );
 }
 
 const Login: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [showAuthenticationCodeInput, setShowAuthenticationCodeInput] = useState(false);
-  const [authenticationCode, setAuthenticationCode] = useState('');
+  const [showAuthenticationCodeInput, setShowAuthenticationCodeInput] =
+    useState(false);
+  const [authenticationCode, setAuthenticationCode] = useState("");
 
   const handleLogin = (): void => {
     // Validate email and password, replace with actual validation logic
@@ -41,7 +44,7 @@ const Login: React.FC = () => {
     if (password) {
       // Reset the password
       resetPassword(email, password);
-      setPassword('');
+      setPassword("");
       setIsAuthenticated(false);
       setShowAuthenticationCodeInput(false);
     }
@@ -63,7 +66,7 @@ const Login: React.FC = () => {
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className='rounded-sm '
+        className="rounded-sm "
       />
       <br />
       <input
@@ -71,7 +74,7 @@ const Login: React.FC = () => {
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className='rounded-sm '
+        className="rounded-sm "
       />
       <br />
       {!showAuthenticationCodeInput ? (
@@ -92,7 +95,9 @@ const Login: React.FC = () => {
         <div>
           <br />
           <p>Check your email for the authentication code.</p>
-          <button onClick={() => setShowAuthenticationCodeInput(false)}>Cancel</button>
+          <button onClick={() => setShowAuthenticationCodeInput(false)}>
+            Cancel
+          </button>
         </div>
       )}
       {isAuthenticated && (
@@ -115,7 +120,8 @@ const Login: React.FC = () => {
 
 export default Login;
 
-{/* <section className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
+{
+  /* <section className="h-screen flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
       <div className="md:w-1/3 max-w-sm">
         <img
           src="University_of_Ghana.png" />
@@ -143,4 +149,5 @@ export default Login;
           Don't have an account? <a className="text-red-600 hover:underline hover:underline-offset-4" href="#">Register</a>
         </div>
       </div>
-    </section> */}
+    </section> */
+}
