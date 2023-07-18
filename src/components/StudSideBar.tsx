@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
-import { AiOutlineHome, AiOutlineCloseCircle } from "react-icons/ai";
+import {
+  AiOutlineHome,
+  AiOutlineCloseCircle,
+  AiOutlineSearch,
+} from "react-icons/ai";
 import { PiStudentFill } from "react-icons/pi";
 import { SiGoogleclassroom } from "react-icons/si";
 import { LiaUserEditSolid } from "react-icons/lia";
@@ -10,6 +14,10 @@ import { IoMdSettings } from "react-icons/io";
 import { GrResources } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
 import { TbMenu2 } from "react-icons/tb";
+import { TfiAnnouncement } from "react-icons/tfi";
+import { BsBell } from "react-icons/bs";
+import { MdOutlineLightMode, MdLightMode } from "react-icons/md";
+import { StatsIcon } from "../svgIcons/StatsIcon";
 const StudSideNav = () => {
   // Function body
   const menus = [
@@ -29,11 +37,11 @@ const StudSideNav = () => {
     {
       name: "eResources",
       link: "*",
-      icon: ImStatsDots,
+      icon: GrResources,
       margin: true,
     },
-    { name: "Announcements", link: "*", icon: GrResources },
-    { name: "Statistics", link: "*", icon: GrResources },
+    { name: "Announcements", link: "*", icon: TfiAnnouncement },
+    { name: "Statistics", link: "*", icon: StatsIcon },
     {
       name: "Settings",
       link: "*",
@@ -46,49 +54,92 @@ const StudSideNav = () => {
   return (
     // JSX/tsx code
     <>
-      {!isOpen ? (
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="fixed z-30 flex items-center cursor-pointer left-10 top-5 "
-        >
-          {React.createElement(TbMenu2, { size: "18" })}
-        </button>
-      ) : (
-        <section className="flex gap-6">
-          <div
-            className={
-              "bg-[#18345C] min-h-screen w-72 text-gray-100 p-5 ${isOpen ? 'translate-x-full':'translate-x-0'} ease-in-out duration-300"
-            }
+      <div className="max-w-[1640] mx-auto flex justify-between items-center p-4">
+        <div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="fixed flex items-center cursor-pointer left-10 top-5 "
           >
+            {React.createElement(TbMenu2, { size: "20" })}
+          </button>
+          <div className="bg-gray-200 rounded-full ml-20 flex items-center h-9 px-2 w-[200px] sm:w-[400px] lg:w[500px]">
+            <AiOutlineSearch size={20} />
+            <input
+              className="bg-transparent p-2 focus:outline-none w-full"
+              type="text"
+              placeholder="Search Class, Documents, Course..."
+            />
+          </div>
+        </div>
+        <div className="flex ">
+          <div className=" cursor-pointer flex items-center mx-4 bg-gray-200 rounded-full px-2 py-0.5">
+            <MdLightMode
+              className="bg-white hover:bg-white rounded-full"
+              size={18}
+            />
+            <MdOutlineLightMode
+              className="hover:bg-gray-50 rounded-full"
+              size={18}
+            />
+          </div>
+          <div className="flex cursor-pointer rounded-full bg-gray-200 mx-4 px-3 py-2">
+            <BsBell className="mx-1 hover:bg-white rounded-full " />
+
+            <IoMdSettings className="mx-1 hover:bg-white rounded-full " />
+          </div>
+          <div className="w-8 h-8 cursor-pointer">
+            <img className=" rounded-full" src="dummy user.png" />
+          </div>
+        </div>
+        {/* overlay*/}
+        {isOpen ? (
+          <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        ) : (
+          ""
+        )}
+
+        <div
+          className={
+            isOpen
+              ? "bg-[#18345C] fixed top-0 z-10 left-0 min-h-screen w-72 text-gray-100 p-5  ease-in-out duration-300 "
+              : "bg-[#18345C] fixed top-0 z-10 min-h-screen w-72 text-gray-100 p-5  left-[-100%] ease-in-out duration-300 "
+          }
+        >
+          <div className={" "}>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="fill-black cursor-pointer text-gray-400  fixed ml-60"
             >
               {React.createElement(AiOutlineCloseCircle, { size: "18" })}
             </button>
-            <div>
+            <div className="mr-20 flex">
               <img src="Group 7010.png" alt="Group 7010" />
+              <span className="font-bold mr-4 px-6">csMIS</span>
             </div>
-            <div className=" mt-4 flex flex-col gap-4 relative">
+            <nav className=" mt-4 flex flex-col gap-3 relative p-4">
               {menus?.map((menu, i) => (
                 <Link
                   to={menu?.link}
                   key={i}
-                  className=" ${menu?.margin && 'mt-3' } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-slate-300 rounded-md"
+                  className=" ${menu?.margin && 'mt-3' } flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-slate-300 hover:text-black rounded-md"
                 >
-                  <div className="text-black">
+                  <div className="text-black  ">
                     {" "}
                     {React.createElement(menu?.icon, { size: "20" })}
                   </div>
-                  <h2 className={"whitespace-pre duration-500 "}>
+                  <h2
+                    className={
+                      "whitespace-pre duration-500 font-normal hover:font-bold w-full h-full"
+                    }
+                  >
                     {menu?.name}
                   </h2>
                 </Link>
               ))}
-            </div>
+            </nav>
           </div>
-        </section>
-      )}
+        </div>
+      </div>
     </>
   );
 };
