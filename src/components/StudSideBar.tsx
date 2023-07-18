@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { HiMenu } from "react-icons/hi";
+
 import {
   AiOutlineHome,
   AiOutlineCloseCircle,
@@ -9,7 +9,7 @@ import {
 import { PiStudentFill } from "react-icons/pi";
 import { SiGoogleclassroom } from "react-icons/si";
 import { LiaUserEditSolid } from "react-icons/lia";
-import { ImStatsDots } from "react-icons/im";
+
 import { IoMdSettings } from "react-icons/io";
 import { GrResources } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
@@ -54,7 +54,7 @@ const StudSideNav = () => {
   return (
     // JSX/tsx code
     <>
-      <div className="max-w-[1640] mx-auto flex justify-between items-center p-4">
+      <div className="max-w-[1640] mx-auto flex justify-between bg-slate-100 items-center p-4">
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
