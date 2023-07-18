@@ -49,7 +49,7 @@ const SideNav = () => {
   return (
     // JSX/tsx code
     <>
-      <div className="max-w-[1640] mx-auto flex justify-between items-center p-4">
+      <div className="max-w-[1640] mx-auto flex justify-between bg-slate-100 items-center p-4">
         <div>
           <button
             onClick={() => setIsOpen(!isOpen)}
