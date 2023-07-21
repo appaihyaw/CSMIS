@@ -72,13 +72,51 @@ export default function GenHome() {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="indigo" className="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16"> <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/> </svg>
             </div>
           </div>
-          <div className=" grid grid-cols-6 gap-1 text-center h-40 shadow-md m-6 mt-0">
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
-            <div className=" grid grid-cols-1 bg-slate-400 rounded-sm underline"></div>
+          <div className=" grid grid-cols-5 gap-3 text-center h-48 shadow-md m-6 mt-0 text-xs text-blue-400">
+            <div className=" grid grid-cols-1 bg-white rounded-sm underline">
+              <img src="batch.jpg"/>
+              <h4 className=" "><a href="/news/department-theatre-arts-receives-audio-visual-equipment-johnson-children%E2%80%99s-school-foundation">Department of Theatre Arts Receives Audio-Visual...</a></h4>
+            </div>
+
+            <div className=" grid grid-cols-1 bg-white rounded-sm underline">
+              <ul>
+                <li  className="three columns jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal">
+                <div className="pic">
+                  <a href="/news/classroom-modernisation-committee-inspects-commissioned-and-ongoing-projects" title="leg">
+                  <img typeof="foaf:Image" src="https://www.ug.edu.gh/sites/default/files/styles/portfolio_item/public/field/image/ant_shots-0122.jpg?itok=yCI6uou5" width="585" height="431" alt=""/></a>
+                </div>
+                  <h4><a href="/news/classroom-modernisation-committee-inspects-commissioned-and-ongoing-projects">Classroom Modernisation Committee Inspects Commissioned...</a></h4>
+              </li>
+              </ul>
+            </div>
+
+            <div className=" grid grid-cols-1 bg-white rounded-sm underline">
+              <ul>
+                <li className="three columns jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal" >
+                  <div className="pic">
+                    <a href="/news/boost-student-accommodation-4160-bed-guss-hostel-gets-underway"><img typeof="foaf:Image" src="https://www.ug.edu.gh/sites/default/files/styles/portfolio_item/public/field/image/7_0.jpg?itok=_56Fr283" width="585" height="431" alt="KKKK"/></a>
+                  </div>
+                  <h4><a href="/news/boost-student-accommodation-4160-bed-guss-hostel-gets-underway">Boost to Student Accommodation as 4,160 Bed GUSS Hostel...</a></h4>
+                </li>
+              </ul>
+            </div>
+
+            <div className=" grid grid-cols-1 bg-white rounded-sm underline">
+              <ul>
+                <li className="three columns jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal">
+                  <div className="pic">
+                    <a href="/news/book-documenting-development-women-psychologists-ghana-launched">
+                      <img typeof="foaf:Image" src="https://www.ug.edu.gh/sites/default/files/styles/portfolio_item/public/field/image/batch_110A0205.jpg?itok=ewH2Kla8" width="585" height="431" alt="KKK"/></a>
+                  </div>
+                  <h4><a href="/news/book-documenting-development-women-psychologists-ghana-launched">Book Documenting Development of Women Psychologists in...</a></h4>
+                </li>
+              </ul>
+            </div>
+
+            <div className=" grid grid-cols-1 bg-white rounded-sm underline">
+
+            </div>
+
           </div>
         </main>
 
