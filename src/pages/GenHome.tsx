@@ -121,6 +121,92 @@ export default function GenHome() {
             </div>
 
           </div>
+          <div className=" grid grid-rows-1 grid-flow-col gap-0 justify-between m-6 bg-black text-white">
+        
+            <div className="row-span-3 bg-white text-blue-500 text-center ...">
+              <div id="block-views-announcements-block-1" className="block block-views">
+                <h4 className=" uppercase"><span>Announcements</span>
+                </h4>
+                <div className="">
+                  <div className="">
+                    <div className="">
+                      <div className="">
+                        <h4 className=""><span><a href="/announcements/call-applications-kwame-nkrumah-chair-african-studies-2">Call for Applications: The Kwame Nkrumah Chair in African Studies</a></span></h4>
+                      </div>
+                      <div className="">
+                        <h4 className=""> <span><a href="/announcements/ecowas-one-health-leadership-course-%E2%80%93-pandemic-preparedness-response-school-public">ECOWAS One Health Leadership Course – Pandemic Preparedness &amp; Response - School of Public Health</a></span></h4>
+                      </div>
+                      <div className="">
+                        <h4 className=""> <span><a href="/announcements/call-applications-msc-genetic-counselling-west-african-genetic-medicine-centre-wagmc">Call for Applications - MSc. in Genetic Counselling - West African Genetic Medicine Centre (WAGMC)</a></span></h4>
+                      </div>
+                      <div className=""><h4 className="announcements"><span><a href="/announcements/internal-advertisement-accountant-finance-directorate">Internal Advertisement - Accountant, Finance Directorate</a></span></h4></div>
+                      <div className=""><h4 className="announcements"> <span><a href="/announcements/call-applications-funded-mphil-scholarship-university-ghana">Call for Applications for a Funded MPhil Scholarship at the University of Ghana</a></span></h4></div>
+                      <div className=""><h4 className="announcements"> <span><a href="/announcements/academic-calendar-school-graduate-studies-20232024-academic-year">Academic Calendar - School of Graduate Studies (2023/2024 Academic Year)</a></span></h4></div>
+                      <div className=""><h4 className="views-announcements"> <span><a href="/announcements/call-applications-ug-pada-august-2023-doctoral-schools">Call for Applications - UG-PADA August 2023 Doctoral Schools</a></span></h4></div>
+                      <div className=""><h4 className="announcements"> <span><a href="/announcements/call-applications-queen-elizabeth-scholars-qes-west-africa-3rd-and-4th-cohorts">Call for Applications - Queen Elizabeth Scholars (QES) West Africa - 3rd and 4th Cohorts</a></span></h4></div>
+                    </div>
+                    <div className=""><a href="/announcements"> more announcements... </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <> 
+            <div className=" bg-blue-100 text-black w-full">
+              <h1> hshkajukkj jhkvjvhhbbbjjookkkkkkkkkkkkkkkkkkkkkk</h1>
+            </div>
+            </>
+            <div className="row-span-3 bg-blue-500 text-center">
+              <div className="">
+                <div className="">
+                  <h4 className=" uppercase text-yellow-100 underline text-l"><span>Featured Links</span></h4>
+                  <div className="">
+                    <div className="">
+                      <a href="https://sts.ug.edu.gh/services/" target="_blank">Course Lecturer Evaluation</a>
+                    </div>
+                      <div className="featurebtn" id="featurebtnash">
+                        <a href="https://admission.ug.edu.gh/applying/undergraduate/mature-entry/ba-distance-learning" target="_blank">Mature Student Admissions (Second Batch)</a>
+                      </div>
+                      <div className="featurebtn" id="featurebtnblue">
+                          <a href="https://sts.ug.edu.gh/timetable">2ND Semester Examination Timetable</a>
+                      </div>
+                        <div className="featurebtn" id="featurebtnyellow">
+                          <a href="https://www.ug.edu.gh/announcements/general-amnesty-undergraduate-students-yet-graduate-0">General Amnesty for Undergraduate Students yet to Graduate</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtngreen">
+                          <a href="https://apply.ug.edu.gh/admissions/admissionstatus" target="_blank">Admission Status Checker</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtn">
+                            <a href="https://forms.office.com/pages/responsepage.aspx?id=X78blMDydUiiTGkHhl0lGtIKYVDBwMpHgEdfPKU7qO9URVNSRFlGT0VKUFZPSUMyMlNNWExYUlFEVi4u&amp;utm_source=Brave" target="_blank">Join the UG Alumni Network</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtnblue">
+                          <a href="https://www.ug.edu.gh/vcsdi/home" target="_blank">Donate to VC's Student Digitalisation Initiative</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtngreen">
+                          <a href="https://sts.ug.edu.gh/services/" target="_blank">Coronavirus Risk Assessment Form</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtn">
+                          <a href="https://sakai.ug.edu.gh" target="_blank">Sakai LMS Login</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtnash">
+                          <a href="/employment-opportunities" target="_blank">Vacancy Announcements</a>
+                        </div><div className="featurebtn" id="featurebtngreen">
+                          <a href="https://www.ug.edu.gh/aad/registration">Steps for Online Registration</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtnyellow">
+                          <a href="aad/fees" target="_blank">SCHEDULE OF FEES</a>
+                        </div><div className="featurebtn" id="featurebtn">
+                          <a href="https://www.ug.edu.gh/academics/calendar" target="_blank">Academic Calendar</a>
+                        </div>
+                        <div className="featurebtn" id="featurebtnblue">
+                          <a href="https://www.ug.edu.gh/sites/default/files/aad/University_Regulations_for_Junior_Members-2017R-compressed.pdf" target="_blank">University Regulations for Junior Members</a>
+                        </div>
+                        <div>&nbsp;</div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         </main>
 
       </div>

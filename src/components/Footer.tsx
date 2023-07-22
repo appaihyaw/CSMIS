@@ -12,7 +12,7 @@ function Footer() {
             <div className=""><a href="https://www.universnewsroom.com/" title="Radio Univers" target="_blank">Radio Univers</a></div>
         </div>
 
-        <div className=" h-2 m-6 mb-0 bg-red-500">
+        <div className=" h-1 m-6 mb-0 bg-red-500">
         </div>
 
         <div className=" bg-blue-950 grid grid-cols-5 gap-4 text-center h-36 shadow-md m-6 mb-0 mt-0 text-xs ">
@@ -90,8 +90,8 @@ function Footer() {
             
         </div>
         <div className=" bg-amber-950 mt-0 m-6 h-8 text-yellow-100 flex justify-between text-sm text-center">
-            <div id="powered"> Copyright ©&nbsp;2023,&nbsp;<a href="https://www.ug.edu.gh/">University of Ghana</a></div>
-            <div className="footer_btm_inner"> <a href="https://twitter.com/UnivofGh" target="_blank" className="icon_tweet" title="Twitter">Twitter</a> <a href="https://plus.google.com/u/0/+universityofghana/posts" target="_blank" className="icon_google" title="Google+">Google+</a> <a href="https://www.facebook.com/univofgh" target="_blank" className="icon_facebook" title="Facebook">Facebook</a> <a href="http://www.youtube.com/user/universityghana" className="icon_skype" title="youtube" target="_blank">youtube</a></div>
+            <div className=" ml-4"> Copyright ©&nbsp;2023,&nbsp;<a href="https://www.ug.edu.gh/">University of Ghana</a></div>
+            <div className=" mr-4"> <a href="https://twitter.com/UnivofGh" target="_blank" className="icon_tweet" title="Twitter">Twitter</a> <a href="https://plus.google.com/u/0/+universityofghana/posts" target="_blank" className="icon_google" title="Google+">Google+</a> <a href="https://www.facebook.com/univofgh" target="_blank" className="icon_facebook" title="Facebook">Facebook</a> <a href="http://www.youtube.com/user/universityghana" className="icon_skype" title="youtube" target="_blank">youtube</a></div>
         </div>
     </div>
    
